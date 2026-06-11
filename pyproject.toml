@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zerodb-apscheduler"
+version = "0.1.0"
+description = "APScheduler job store backed by ZeroDB. Persistent scheduling with auto-provisioning — no Redis, no database setup."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    {name = "AINative Studio", email = "dev@ainative.studio"},
+]
+keywords = [
+    "zerodb",
+    "ainative",
+    "apscheduler",
+    "auto-provisioning",
+    "redis-alternative",
+    "task-queue",
+    "background-jobs",
+    "serverless",
+    "job-store",
+    "scheduler",
+    "cron",
+    "persistent-scheduler",
+    "task-scheduler",
+    "job-scheduling",
+    "celery-alternative",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Distributed Computing",
+]
+dependencies = [
+    "apscheduler>=3.9,<4",
+    "requests>=2.28",
+]
+
+[project.urls]
+Homepage = "https://github.com/AINative-Studio/zerodb-apscheduler"
+Documentation = "https://docs.ainative.studio"
+Repository = "https://github.com/AINative-Studio/zerodb-apscheduler"
+Issues = "https://github.com/AINative-Studio/zerodb-apscheduler/issues"
+
+[tool.setuptools.packages.find]
+include = ["zerodb_apscheduler*"]
